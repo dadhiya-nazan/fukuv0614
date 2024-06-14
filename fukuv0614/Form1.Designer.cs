@@ -34,17 +34,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(308, 281);
+            textBox1.Location = new Point(333, 247);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(29, 23);
+            textBox1.Size = new Size(61, 23);
             textBox1.TabIndex = 0;
             textBox1.Text = "0";
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(617, 379);
+            button1.Location = new Point(302, 363);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(122, 59);
             button1.TabIndex = 1;
             button1.Text = "check";
             button1.UseVisualStyleBackColor = true;

@@ -13,15 +13,15 @@ namespace fukuv0614
         private void button1_Click(object sender, EventArgs e)
         {
             count++;
-            MessageBox.Show ($"{count}‰ñ–Ú‚Ì’§í");
+            MessageBox.Show($"{count}‰ñ–Ú‚Ì’§í");
             int yosou;
-            yosou = int.Parse(TextBox.Text);
+            yosou = int.Parse(textBox1.Text);
 
-            if(yosou == ans)
+            if (yosou == ans)
             {
                 MessageBox.Show("Bingo!!");
             }
-            else if(yosou > ans)
+            else if (yosou > ans)
             {
                 MessageBox.Show("less");
             }
@@ -29,6 +29,11 @@ namespace fukuv0614
             {
                 MessageBox.Show("Greater");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
