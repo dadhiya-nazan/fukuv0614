@@ -31,6 +31,7 @@
             textBox1 = new TextBox();
             button1 = new Button();
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -47,7 +48,7 @@
             // button1
             // 
             button1.Font = new Font("源ノ角ゴシック Code JP R", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(302, 363);
+            button1.Location = new Point(325, 358);
             button1.Name = "button1";
             button1.Size = new Size(122, 59);
             button1.TabIndex = 1;
@@ -67,11 +68,24 @@
             label1.TabIndex = 2;
             label1.Text = "?";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.Control;
+            label2.Font = new Font("Yu Gothic UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(396, 145);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 28);
+            label2.TabIndex = 3;
+            label2.Text = "Answer";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
@@ -86,5 +100,6 @@
         private TextBox textBox1;
         private Button button1;
         private Label label1;
+        private Label label2;
     }
 }
