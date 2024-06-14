@@ -22,6 +22,7 @@ namespace fukuv0614
                 MessageBox.Show("Bingo!!");
                 label1.Text = $"{ans}";
                 label1.BackColor = Color.Red;
+                ans = random.Next(51);
             }
             else if (yosou > ans)
             {
