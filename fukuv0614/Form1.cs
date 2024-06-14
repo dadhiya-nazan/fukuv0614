@@ -20,6 +20,8 @@ namespace fukuv0614
             if (yosou == ans)
             {
                 MessageBox.Show("Bingo!!");
+                label1.Text = $"{ans}";
+                label1.BackColor = Color.Red;
             }
             else if (yosou > ans)
             {

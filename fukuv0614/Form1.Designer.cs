@@ -30,19 +30,23 @@
         {
             textBox1 = new TextBox();
             button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(333, 247);
+            textBox1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(325, 208);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(61, 23);
+            textBox1.Size = new Size(41, 43);
             textBox1.TabIndex = 0;
             textBox1.Text = "0";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
+            button1.Font = new Font("源ノ角ゴシック Code JP R", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(302, 363);
             button1.Name = "button1";
             button1.Size = new Size(122, 59);
@@ -51,11 +55,24 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaptionText;
+            label1.Font = new Font("Yu Gothic UI", 50F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(403, 184);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 89);
+            label1.TabIndex = 2;
+            label1.Text = "?";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Name = "Form1";
@@ -68,5 +85,6 @@
 
         private TextBox textBox1;
         private Button button1;
+        private Label label1;
     }
 }
